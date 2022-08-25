@@ -1,8 +1,8 @@
-# NanoGame
+# NanoGame in Angular
 
 ## A nano game with some ideas!!
 
-Develop in Angular
+The game is still in development
 
 ## Install and Run
 

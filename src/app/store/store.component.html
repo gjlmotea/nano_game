@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="h1">商店區塊</div>
+      <div *ngFor="let weapon of weapons; let i = index">
+        <div>武器編號: {{i}}</div>
+        <div>武器名稱: {{weapon.name}}</div>
+        <div>武器攻擊力: {{weapon.ATK}}</div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
