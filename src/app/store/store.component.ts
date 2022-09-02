@@ -7,15 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponent implements OnInit {
 
-  weapons = [
-    {'name': '小劍', 'ATK': '1', 'Dollar': '4'},
-    {'name': '彎刀', 'ATK': '2', 'Dollar': '8'},
+  weapons: Array<Weapon> = [
+    {name: '小劍', dollar: 4, attr:{'atk': 1}},
+    {name: '彎刀', dollar: 4, attr:{'atk': 2}},
   ]
-
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+
+export interface Weapon {
+  name: string;
+  dollar: number;
+  attr: {atk?: number; def?: number};
 }
