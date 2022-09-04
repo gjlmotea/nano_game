@@ -1,12 +1,16 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div class="h1">商店區塊</div>
-      <div *ngFor="let weapon of weapons; let i = index">
-        <div>武器編號: {{i}}</div>
-        <div>武器名稱: {{weapon.name}}</div>
-        <div>武器攻擊力: {{weapon.dollar}}</div>
-        <br>
+<div class="h1">商店區塊</div>
+<div class="row">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3"
+       *ngFor="let equip of equips; let i = index">
+    <div class="card">
+      <div class="card-header">
+        <div>裝備編號: {{i + 1}}</div>
+        <div>裝備名稱: {{equip.name}}</div>
+      </div>
+      <div class="card-body">
+        <div *ngIf="equip.attr.atk">裝備攻擊力: {{equip.attr.atk}}</div>
+        <div *ngIf="equip.attr.def">裝備防禦力: {{equip.attr.def}}</div>
+        <div>裝備價格：{{equip.dollar}}</div>
       </div>
     </div>
   </div>
