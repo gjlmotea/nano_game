@@ -1,0 +1,4 @@
+.card:hover {
+    background: whitesmoke;
+    outline: solid 0.1em gray;
+}
