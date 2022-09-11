@@ -9,6 +9,7 @@ export class RoleComponent implements OnInit {
 
   max_hp = 5
   hp = 5
+  money = 0
 
   constructor() { }
 
